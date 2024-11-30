@@ -1,0 +1,192 @@
+body {
+    max-width: 1440px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.link {
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23.44px;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.navigator {
+    text-align: right;
+    margin-bottom: 20px;
+    margin-top: -50px;
+}
+
+.navigator .link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navigator .link:hover {
+    color: brown;
+}
+
+
+.card-img-top {
+    max-width: 25%;
+    height: auto;
+    margin-left: 90px;
+    padding-bottom: 10px;
+}
+
+.group {
+    float: left;
+    margin-right: 10px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.marka {
+    float: left;
+    margin-right: 10px;
+}
+
+.title_container {
+    clear: left;
+}
+
+.btn-custom {
+    transition: transform 0.3s ease;
+}
+
+.btn-custom:active {
+    transform: scale(0.9);
+}
+
+.card_svg {
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card_svg:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 50px;
+    box-sizing: border-box;
+    padding-top: 50px
+}
+
+.flex-item {
+    flex-basis: calc(33.33% - 20px);
+    /* Учет боковых отступов */
+    margin-bottom: 20px;
+    /* Отступ между строками */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+img.human {
+    width: 150px;
+    /* Размеры каждой картинки */
+    height: 150px;
+}
+
+.tablo {
+    align-items: left;
+}
+
+.link {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23.44px;
+    text-align: left;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+button {
+    background-color: aquamarine;
+
+}
+
+.text_section_7 {
+    background-color: #FFFFFF;
+    color: #2E2E2E;
+    padding: 50px 0 50px 0;
+}
+
+.text_section_6 {
+    display: flex;
+    gap: 15px;
+    background-color: #FFFFFF;
+    padding: 50px 0 50px 0;
+    color: #2E2E2E;
+}
+
+.text_section_5 {
+    background-color: #FFFFFF;
+    color: #2E2E2E;
+    padding: 50px 0 50px 0;
+    border-radius: 30px;
+}
+
+.text_section_4 {
+    background-color: #FFFFFF;
+    color: #2E2E2E;
+    padding: 50px 0 50px 0;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+
+.text_section_3 {
+    background-color: #FFFFFF;
+    color: #2E2E2E;
+    padding: 50px 0 50px 0;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+
+.section_8 {
+    margin-left:58px;
+}
+.footer {
+    margin-top:25px;
+    margin-left:58px;
+}
+
+.phone {
+    float: left;
+}
+
+.metka {
+    float: left;
+}
+
+.card-text {
+    color: #2E2E2E;
+}
+
+#we,
+#yslugi,
+#otrasli,
+#experts,
+#contacts {
+    font-family: 'Tenor Sans', sans-serif;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    margin-bottom: 15px;
+    margin-top: -20px;
+}

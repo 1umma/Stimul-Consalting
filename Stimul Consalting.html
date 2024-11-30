@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Stimul Consalting.css" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Stimul Consalting</title>
+    <style>
+        #splash-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(29, 28, 27, 1);
+            color: brown;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            opacity: 1;
+            transition: opacity 1s ease-out;
+        }
+
+
+        #splash-text {
+            font-size: 3rem;
+            font-weight: bold;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+
+        }
+
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .main-content {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="splash-screen">
+        <div id="splash-text">Stimul Consalting</div>
+    </div>
+    <script>
+        window.addEventListener('load', function () {
+
+            setTimeout(function () {
+
+                document.getElementById('splash-screen').style.opacity = 0;
+
+
+                setTimeout(function () {
+                    document.getElementById('splash-screen').style.display = 'none';
+                    document.querySelector('.main-content').style.display = 'block';
+                }, 1000);
+            }, 2000);
+        });
+    </script>
+    <style>
+        body {
+            background-color: rgba(29, 28, 27, 1);
+            color: rgba(255, 255, 255, 1);
+        }
+    </style>
+    <header class="site_header">
+        <div class="main_container">
+            <div class="navigation_container">
+                <div class="logo_img">
+                    <img class="img_logo" src="Logs/Stimul.jpg" alt="logo" height="67px" width="167px">
+                    <style>
+                        .img_logo {
+                            margin-top: 20px;
+                        }
+                    </style>
+                </div>
+                <div class="navigator">
+                    <a class="link" href="#we">Мы</a>
+                    <a class="link" href="#yslugi">Услуги/Программы</a>
+                    <a class="link" href="#otrasli">Кейсы/Отрасли</a>
+                    <a class="link" href="#experts">Эксперты</a>
+                    <a class="link" href="#contacts">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="section_1">
+        <div class="main_container">
+            <h1 class="main_title">Ваш успех - наша работа</h1>
+            <p class="content">Добро пожаловать в мир экспертного консалтинга, где мы помогаем вашему<br>
+                бизнесу процветать через стратегическое руководство, инновационные<br>
+                решения и надежное партнерство</p>
+    </section>
+    <section class="section_2">
+        <div class="main_container">
+            <h1 id="we">Мы</h1>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="Other/icon.jpg" class="card-img-top" alt="card_img">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text">Мы обеспечиваем рост и развитие вашей компании</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="Other/icon.jpg" class="card-img-top" alt="card_img">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text">Мы дарим вашему бизнесу второе дыхание</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="Other/icon.jpg" class="card-img-top" alt="card_img">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text">Мы помогаем выйти в стабильный плюс</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="Other/icon.jpg" class="card-img-top" alt="card_img">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text">Мы дарим вашему бизнесу второе дыхание</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section_3">
+        <div class="main_container">
+            <img src="Logs/Vector.svg" class="marka">
+            <h1 id="yslugi">Услуги/Программы</h1>
+        </div>
+        <div class="main_container">
+            <div class="text_section_3">
+                <img src="Logs/Group.svg" class="group" alt="коучинг">
+                <h1>Коучинг</h1>
+                <img src="Logs/Vector (1).svg" class="marka">
+                <h3>Что мы делаем?</h3>
+                <p>Управленческий консалтинг - это, когда компания нанимает эксперта, который приходит и помогает ей
+                    улучшить свои дела.<br> Этот эксперт анализирует, как компания работает, и предлагает советы и
+                    стратегии
+                    для улучшения её работы. <br> Этот эксперт анализирует, как компания работает, и предлагает советы и
+                    стратегии для улучшения её работы, советы и стратегии для и <br> помогает ей улучшить свои дела.</p>
+                <img src="Logs/Vector (1).svg" class="marka">
+                <h3>Что мы получим?</h3>
+                <p>Подходит для руководителей и компаний, которые ищут экспертное сопровождение и советы по улучшению
+                    своих
+                    бизнес-<br>процессов, стратегии развития и управления. Cтартапы также могут воспользоваться услугами
+                    управленческого<br>консультанта для разработки успешной бизнес-стратегии и управленческих навыков.
+                </p>
+                <img src="Logs/Vector (1).svg" class="marka">
+                <h3>Трудозатраты</h3>
+                <img src="Logs/Показатель.png" class="pokazatel" width="750px">
+                <button type="button" class="btn btn-warning btn-lg float-right" data-toggle="modal"
+                    data-target="#myModal">
+                    Подробнее
+                </button>
+
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="myModalLabel">Форма заявки</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form id="contactForm">
+                                    <div class="form-group">
+                                        <label for="name">Имя</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Введите ваше имя"
+                                            required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="surname">Фамилия</label>
+                                        <input type="text" class="form-control" id="surname"
+                                            placeholder="Введите вашу фамилию" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone">Номер телефона</label>
+                                        <input type="tel" class="form-control" id="phone"
+                                            placeholder="Введите ваш номер телефона" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" id="email"
+                                            placeholder="Введите ваш email" required>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                                <button type="submit" class="btn btn-primary" id="submitForm">Отправить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    document.getElementById('submitForm1').addEventListener('click', function () {
+                        var name = document.getElementById('name1').value;
+                        var surname = document.getElementById('surname1').value;
+                        var phone = document.getElementById('phone1').value;
+                        var email = document.getElementById('email1').value;
+
+                        console.log("Имя:", name);
+                        console.log("Фамилия:", surname);
+                        console.log("Телефон:", phone);
+                        console.log("Email:", email);
+
+                        // Закрытие модального окна после отправки
+                        $('#modal1').modal('hide');
+                    });
+                </script>
+                <style>
+                    button {
+                        margin-right: 20px;
+                        margin-top: 50px;
+                    }
+
+                    .btn-warning {
+                        background-color: #FFA500;
+                        border-color: #FF8C00;
+
+                    }
+
+                    .btn-warning:hover {
+                        background-color: #6F4F28;
+                        border-color: #4E3629;
+
+                    }
+
+                    .btn-warning:active {
+                        background-color: #5a3e25;
+                        border-color: #402a1a;
+                    }
+                </style>
+            </div>
+        </div>
+    </section>
+    <section class="section_4">
+        <div class="main_container">
+            <div class="text_section_4">
+                <img src="Logs/Group.svg" class="group" alt="трансформация">
+                <h1>Трансформация</h1>
+                <img src="Logs/Vector (1).svg" class="marka">
+                <h3>Что мы делаем?</h3>
+                <p>Управленческий консалтинг - это, когда компания нанимает эксперта, который приходит и помогает ей
+                    улучшить свои дела.<br> Этот эксперт анализирует, как компания работает, и предлагает советы и
+                    стратегии
+                    для улучшения её работы. <br> Этот эксперт анализирует, как компания работает, и предлагает советы и
+                    стратегии для улучшения её работы, советы и стратегии для и <br> помогает ей улучшить свои дела.</p>
+                <img src="Logs/Vector (1).svg" class="marka">
+                <h3>Что мы получим?</h3>
+                <p>Подходит для руководителей и компаний, которые ищут экспертное сопровождение и советы по улучшению
+                    своих
+                    бизнес-<br>процессов, стратегии развития и управления. Cтартапы также могут воспользоваться услугами
+                    управленческого<br>консультанта для разработки успешной бизнес-стратегии и управленческих навыков.
+                </p>
+                <img src="Logs/Vector (1).svg" class="marka">
+                <h3>Трудозатраты</h3>
+                <img src="Logs/Показатель.png" class="pokazatel" width="750px">
+                <button type="button" class="btn btn-warning btn-lg float-right" data-toggle="modal"
+                    data-target="#modal10">
+                    Подробнее
+                </button>
+
+                <div class="modal fade" id="modal10" tabindex="-1" role="dialog" aria-labelledby="modal10Label"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modal10Label">Форма заявки</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form id="form2">
+                                    <div class="form-group">
+                                        <label for="name2">Имя</label>
+                                        <input type="text" class="form-control" id="name2"
+                                            placeholder="Введите ваше имя" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="surname2">Фамилия</label>
+                                        <input type="text" class="form-control" id="surname2"
+                                            placeholder="Введите вашу фамилию" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone2">Номер телефона</label>
+                                        <input type="tel" class="form-control" id="phone2"
+                                            placeholder="Введите ваш номер телефона" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email2">Email</label>
+                                        <input type="email" class="form-control" id="email2"
+                                            placeholder="Введите ваш email" required>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                                <button type="submit" class="btn btn-primary" id="submitForm2">Отправить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            document.getElementById('submitForm2').addEventListener('click', function () {
+                var name = document.getElementById('name2').value;
+                var surname = document.getElementById('surname2').value;
+                var phone = document.getElementById('phone2').value;
+                var email = document.getElementById('email2').value;
+
+                console.log("Имя:", name);
+                console.log("Фамилия:", surname);
+                console.log("Телефон:", phone);
+                console.log("Email:", email);
+
+                // Закрытие модального окна после отправки
+                $('#modal2').modal('hide');
+            });
+        </script>
+    </section>
+    <section class="section_5">
+        <div class="main_container">
+            <div class="text_section_5">
+                <img src="Logs/Group.svg" class="group" alt="Финансирование">
+                <h1>Финансирование</h1>
+                <img src="Logs/Vector (1).svg" class="marka">
+                <h3>Что мы делаем?</h3>
+                <p>Управленческий консалтинг - это, когда компания нанимает эксперта, который приходит и помогает ей
+                    улучшить свои дела.<br> Этот эксперт анализирует, как компания работает, и предлагает советы и
+                    стратегии
+                    для улучшения её работы. <br> Этот эксперт анализирует, как компания работает, и предлагает советы и
+                    стратегии для улучшения её работы, советы и стратегии для и <br> помогает ей улучшить свои дела.</p>
+                <img src="Logs/Vector (1).svg" class="marka">
+                <h3>Что мы получим?</h3>
+                <p>Подходит для руководителей и компаний, которые ищут экспертное сопровождение и советы по улучшению
+                    своих
+                    бизнес-<br>процессов, стратегии развития и управления. Cтартапы также могут воспользоваться услугами
+                    управленческого<br>консультанта для разработки успешной бизнес-стратегии и управленческих навыков.
+                </p>
+                <img src="Logs/Vector (1).svg" class="marka">
+                <h3>Трудозатраты</h3>
+                <img src="Logs/Показатель.png" class="pokazatel" width="750px">
+                <button type="button" class="btn btn-warning btn-lg float-right" data-toggle="modal"
+                    data-target="#modal11">
+                    Подробнее
+                </button>
+
+                <div class="modal fade" id="modal11" tabindex="-1" role="dialog" aria-labelledby="modal11Label"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modal11Label">Форма заявки</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form id="form3">
+                                    <div class="form-group">
+                                        <label for="name3">Имя</label>
+                                        <input type="text" class="form-control" id="name3"
+                                            placeholder="Введите ваше имя" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="surname3">Фамилия</label>
+                                        <input type="text" class="form-control" id="surname3"
+                                            placeholder="Введите вашу фамилию" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone3">Номер телефона</label>
+                                        <input type="tel" class="form-control" id="phone3"
+                                            placeholder="Введите ваш номер телефона" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email3">Email</label>
+                                        <input type="email" class="form-control" id="email3"
+                                            placeholder="Введите ваш email" required>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                                <button type="submit" class="btn btn-primary" id="submitForm3">Отправить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            document.getElementById('submitForm3').addEventListener('click', function () {
+                var name = document.getElementById('name3').value;
+                var surname = document.getElementById('surname3').value;
+                var phone = document.getElementById('phone3').value;
+                var email = document.getElementById('email3').value;
+
+                console.log("Имя:", name);
+                console.log("Фамилия:", surname);
+                console.log("Телефон:", phone);
+                console.log("Email:", email);
+
+                // Закрытие модального окна после отправки
+                $('#modal3').modal('hide');
+            });
+        </script>
+    </section>
+
+    <section class="section_6">
+        <div class="main_container">
+            <img src="Logs/Vector.svg" class="marka">
+            <h1 id="otrasli">Кейсы/Отрасли</h1>
+            <img src="Other/ЭКСПЕРТ НАО+.png" class="card_svg" alt="карточка" width="325px" height="225px">
+            <img src="Other/HOME AIR.png" class="card_svg" alt="карточка" width="325px" height="225px">
+            <img src="Other/АГРОМАКС.png" class="card_svg" alt="карточка" width="325px" height="225px">
+        </div>
+    </section>
+    <style>
+        .section_9 {
+            padding: 30px 0;
+        }
+
+        .main_container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .flex-item {
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .flex-item img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .flex-item figcaption {
+            text-align: center;
+        }
+
+        .flex-item h2.name {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .flex-item span.role {
+            font-size: 14px;
+            color: gray;
+        }
+
+        .modal-body {
+            color: #000;
+        }
+
+        .modal-title {
+            color: #000;
+        }
+    </style>
+    <section class="section_7">
+        <div class="main_container">
+            <img src="Logs/Vector.svg" class="marka">
+            <h1 id="experts">Эксперты</h1>
+            <div class="main_container">
+                <div class="flex-container">
+
+                    <div class="flex-item" data-toggle="modal" data-target="#modal1">
+                        <img src="Images340/1.jpg" class="human" alt="Анна Гольц">
+                        <figcaption>
+                            <h2 class="name">Анна Гольц</h2>
+                            <span class="role">Глава отдела оптимизации</span>
+                        </figcaption>
+                    </div>
+
+
+                    <div class="flex-item" data-toggle="modal" data-target="#modal2">
+                        <img src="Images340/2.jpg" class="human" alt="Петр Игнашенко">
+                        <figcaption>
+                            <h2 class="name">Петр Игнашенко</h2>
+                            <span class="role">Руководитель отдела маркетинга</span>
+                        </figcaption>
+                    </div>
+
+
+                    <div class="flex-item" data-toggle="modal" data-target="#modal3">
+                        <img src="Images340/3.jpg" class="human" alt="Марина Смирнова">
+                        <figcaption>
+                            <h2 class="name">Марина Смирнова</h2>
+                            <span class="role">Эксперт в сфере продаж</span>
+                        </figcaption>
+                    </div>
+
+
+                    <div class="flex-item" data-toggle="modal" data-target="#modal4">
+                        <img src="Images340/4.jpg" class="human" alt="Петр Игнашенко">
+                        <figcaption>
+                            <h2 class="name">Петр Игнашенко</h2>
+                            <span class="role">Руководитель отдела маркетинга</span>
+                        </figcaption>
+                    </div>
+
+
+                    <div class="flex-item" data-toggle="modal" data-target="#modal5">
+                        <img src="Images340/5.jpg" class="human" alt="Марина Смирнова">
+                        <figcaption>
+                            <h2 class="name">Марина Смирнова</h2>
+                            <span class="role">Эксперт в сфере продаж</span>
+                        </figcaption>
+                    </div>
+
+
+                    <div class="flex-item" data-toggle="modal" data-target="#modal6">
+                        <img src="Images340/6.jpg" class="human" alt="Анна Гольц">
+                        <figcaption>
+                            <h2 class="name">Анна Гольц</h2>
+                            <span class="role">Глава отдела оптимизации</span>
+                        </figcaption>
+                    </div>
+
+
+                    <div class="flex-item" data-toggle="modal" data-target="#modal7">
+                        <img src="Images340/7.jpg" class="human" alt="Анна Гольц">
+                        <figcaption>
+                            <h2 class="name">Анна Гольц</h2>
+                            <span class="role">Глава отдела оптимизации</span>
+                        </figcaption>
+                    </div>
+
+
+                    <div class="flex-item" data-toggle="modal" data-target="#modal8">
+                        <img src="Images340/8.jpg" class="human" alt="Марина Смирнова">
+                        <figcaption>
+                            <h2 class="name">Марина Смирнова</h2>
+                            <span class="role">Эксперт в сфере продаж</span>
+                        </figcaption>
+                    </div>
+
+
+                    <div class="flex-item" data-toggle="modal" data-target="#modal9">
+                        <img src="Images340/9.jpg" class="human" alt="Петр Игнашенко">
+                        <figcaption>
+                            <h2 class="name">Петр Игнашенко</h2>
+                            <span class="role">Руководитель отдела маркетинга</span>
+                        </figcaption>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="modal-content"></div>
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel1">Анна Гольц</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="Images340/1.jpg" alt="Анна Гольц" class="rounded-circle"
+                        style="width: 120px; height: 120px; object-fit: cover;" />
+                    <p>Глава отдела оптимизации</p>
+                    <p>Глава отдела оптимизации анализирует бизнес-процессы компании, выявляет узкие места и внедряет
+                        решения для повышения их эффективности. Его задача — снизить затраты, улучшить
+                        производительность и качество обслуживания, что помогает компании работать более эффективно,
+                        увеличивать прибыль и укреплять конкурентные позиции на рынке.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel2">Петр Игнашенко</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="Images340/2.jpg" alt="Петр Игнашенко" class="rounded-circle"
+                        style="width: 120px; height: 120px; object-fit: cover;" />
+                    <p>Руководитель отдела маркетинга</p>
+                    <p>Руководитель отдела маркетинга разрабатывает и реализует маркетинговые стратегии, управляет
+                        командой и координирует рекламные кампании. Он анализирует рынок, изучает потребности клиентов и
+                        создаёт эффективные подходы для повышения узнаваемости бренда, привлечения аудитории и роста
+                        продаж компании.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel3">Марина Смирнова</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="Images340/3.jpg" alt="Марина Смирнова" class="rounded-circle"
+                        style="width: 120px; height: 120px; object-fit: cover;" />
+                    <p>Эксперт в сфере продаж</p>
+                    <p>Эксперт в отделе продаж — это специалист, который разрабатывает и реализует стратегии привлечения
+                        клиентов, ведет переговоры, анализирует рынок и работает с возражениями. Его цель — увеличить
+                        объем продаж и улучшить взаимоотношения с клиентами, что способствует росту бизнеса компании.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel4">Петр Игнашенко</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="Images340/4.jpg" alt="Петр Игнашенко" class="rounded-circle"
+                        style="width: 120px; height: 120px; object-fit: cover;" />
+                    <p>Руководитель отдела маркетинга</p>
+                    <p>Руководитель отдела маркетинга разрабатывает и реализует маркетинговые стратегии, управляет
+                        командой и координирует рекламные кампании. Он анализирует рынок, изучает потребности клиентов и
+                        создаёт эффективные подходы для повышения узнаваемости бренда, привлечения аудитории и роста
+                        продаж компании.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="modalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel5">Марина Смирнова</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="Images340/5.jpg" alt="Марина Смирнова" class="rounded-circle"
+                        style="width: 120px; height: 120px; object-fit: cover;" />
+                    <p>Эксперт в сфере продаж</p>
+                    <p>Эксперт в отделе продаж — это специалист, который разрабатывает и реализует стратегии привлечения
+                        клиентов, ведет переговоры, анализирует рынок и работает с возражениями. Его цель — увеличить
+                        объем продаж и улучшить взаимоотношения с клиентами, что способствует росту бизнеса компании.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="modalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel6">Анна Гольц</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="Images340/6.jpg" alt="Анна Гольц" class="rounded-circle"
+                        style="width: 120px; height: 120px; object-fit: cover;" />
+                    <p>Глава отдела оптимизации</p>
+                    <p>Глава отдела оптимизации анализирует бизнес-процессы компании, выявляет узкие места и внедряет
+                        решения для повышения их эффективности. Его задача — снизить затраты, улучшить
+                        производительность и качество обслуживания, что помогает компании работать более эффективно,
+                        увеличивать прибыль и укреплять конкурентные позиции на рынке.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="modalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel7">Анна Гольц</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="Images340/7.jpg" alt="Анна Гольц" class="rounded-circle"
+                        style="width: 120px; height: 120px; object-fit: cover;" />
+                    <p>Глава отдела оптимизации</p>
+                    <p>Глава отдела оптимизации анализирует бизнес-процессы компании, выявляет узкие места и внедряет
+                        решения для повышения их эффективности. Его задача — снизить затраты, улучшить
+                        производительность и качество обслуживания, что помогает компании работать более эффективно,
+                        увеличивать прибыль и укреплять конкурентные позиции на рынке.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="modalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel8">Марина Смирнова</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="Images340/8.jpg" alt="Марина Смирнова" class="rounded-circle"
+                        style="width: 120px; height: 120px; object-fit: cover;" />
+                    <p>Эксперт в сфере продаж</p>
+                    <p>Эксперт в отделе продаж — это специалист, который разрабатывает и реализует стратегии привлечения
+                        клиентов, ведет переговоры, анализирует рынок и работает с возражениями. Его цель — увеличить
+                        объем продаж и улучшить взаимоотношения с клиентами, что способствует росту бизнеса компании.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-labelledby="modalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel9">Петр Игнашенко</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="Images340/9.jpg" alt="Петр Игнашенко" class="rounded-circle"
+                        style="width: 120px; height: 120px; object-fit: cover;" />
+                    <p>Руководитель отдела маркетинга</p>
+                    <p>Руководитель отдела маркетинга разрабатывает и реализует маркетинговые стратегии, управляет
+                        командой и координирует рекламные кампании. Он анализирует рынок, изучает потребности клиентов и
+                        создаёт эффективные подходы для повышения узнаваемости бренда, привлечения аудитории и роста
+                        продаж компании.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <section class="section_8">
+        <img src="Logs/Vector.svg" class="marka">
+        <h1 id="contacts">Контакты</h1>
+        <div class="text_footer">
+            <h1>Готовы создать стратегию успеха<br>для своего бизнеса? Свяжитесь<br>с нами!</h1>
+            <img src="Logs/Phone.svg" class="phone" height="20px" width="15px">
+            <p>8 903 939 33 33</p>
+            <img src="Other/Map.png" class="metka" height="20px" width="15px">
+            <p>г. Москва, ул. Лисицина, д.8</p>
+    </section>
+
+    <footer class="footer">
+        <h2>Мы в социальных сетях</h2>
+        <a href="https://t.me/stimul_consalting1488" target="_blank">
+            <img src="Logs/tg_circle 1.svg" class="social" alt="Telegram">
+        </a>
+        <button type="button" class="btn btn-warning btn-lg float-right">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</button>
+        </div>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
